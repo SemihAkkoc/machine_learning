@@ -1,9 +1,7 @@
-import random
-
 from tensorflow import keras
 import numpy as np
 import matplotlib.pyplot as plt
-
+import random
 
 class LinearFunction:
     def __init__(self, m, n):
@@ -51,7 +49,7 @@ x_test, y_test = my_function.create_training_data(size)
 y_prediction = model.predict(x_test).reshape(1, size)
 
 plt.figure(figsize=(10, 10))
-plt.title(my_function, ' Graph Machine Learning')
+plt.title(f'{my_function} Graph Machine Learning')
 plt.subplot(2, 1, 1)
 plt.title('Training')
 plt.plot(x, y)
@@ -60,8 +58,8 @@ plt.ylabel('y')
 
 plt.subplot(2, 1, 2)
 plt.title('Test')
-plt.plot(x_test, y_test, 'r:', x_test, y_prediction, 'c-')
+plt.plot(x_test, y_prediction, 'c-', x_test, y_test, 'r:')
 plt.xlabel('x')
 plt.ylabel('y')
-plt.legend(['Given', 'Machine'])
+plt.legend(['Model', 'Given'])
 plt.show()
