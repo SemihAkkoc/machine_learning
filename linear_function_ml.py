@@ -19,7 +19,7 @@ class LinearFunction:
         if size < 1:
             raise ValueError
         else:
-            x = np.arange(-size // 2, size // 2 + 1)
+            x = np.arange(-size // 2, size // 2)
             return x, self.m * x + self.n
 
     def plot(self, start=-10, end=10):
@@ -46,7 +46,7 @@ model.fit(x, y, epochs=500)
 
 size = random.randint(1, 100)
 x_test, y_test = my_function.create_training_data(size)
-y_prediction = model.predict(x_test).reshape(1, size)
+y_prediction = model.predict(x_test).reshape(1, size+1)
 
 plt.figure(figsize=(10, 10))
 plt.title(f'{my_function} Graph Machine Learning')
