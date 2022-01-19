@@ -5,3 +5,6 @@ my first steps in machine learning world
 In this code we created a model using the Titanic dataset. Our model predicts the probability of a person's survival.
 ## flowers_ml -> classification
 In this code our classifier model predicts a flower with given values of a sepal length, width and petal length, witdh.
+## hello_world_ml
+In this code neural network tries to determine the handwritten number.
+## linear_ml
