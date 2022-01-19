@@ -7,4 +7,5 @@ In this code we created a model using the Titanic dataset. Our model predicts th
 In this code our classifier model predicts a flower with given values of a sepal length, width and petal length, witdh.
 ## hello_world_ml
 In this code neural network tries to determine the handwritten number.
-## linear_ml
+## linear_function_ml
+In this code one node tweaks its weight and bias that it founds the given linear function as y=mx+n 
